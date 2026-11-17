@@ -1,2 +1,5 @@
-# -VISUAL-DOMAIN-RENDERING-UNICODE-HOMOGRAPH-MITIGATION-
-  VISUAL DOMAIN RENDERING FOR PHISHING  DETECTION: A CNN-BASED APPROACH WITH  UNICODE HOMOGRAPH MITIGATION. We propose a visual rendering  pipeline that converts domain name strings into 64×224  pixel RGB images and  employs an ImageNet-pretrained ResNet-18 CNN to classify them as legitimate  or phishing.  
+# VISUAL-DOMAIN-RENDERING-UNICODE-HOMOGRAPH-MITIGATION
+We propose a visual rendering pipeline that converts domain name strings into 64×224  pixel RGB images and employs an ImageNet-pretrained ResNet-18 CNN to classify them as legitimate or phishing. A dataset of approximately 70,000 rendered domain images is constructed from Indian government portals and Tranco-listed domains, with 
+phishing variants synthetically generated using seven techniques: typosquatting, homograph substitution, keyword inser-tion, TLD substitution, character insertion, combosquatting, and subdomain spoofing. A two-stage fine-tuning strategy trains the model first on 10,000 paired samples, then on the post-processed corpus of approximately 52,580 samples, achieving AUC-ROC of 0.9548 and accuracy of 89.01%. Two novel findings are reported: (1) visual only CNNs exhibit a fundamental blind spot against Unicode homograph 
+attacks due to pixel-identical rendering of lookalike characters; and (2) a lightweight Unicode prefilter achieves 100% recall intercepting homograph 
+domains with a false positive rate of only 2.0% on legitimate domains.
